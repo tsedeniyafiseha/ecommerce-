@@ -8,7 +8,7 @@ import bcrypt from "bcryptjs";
 async function checkAdminUser() {
   console.log("🔍 Checking admin user...\n");
 
-  const adminEmail = "taranveerebu340@gmail.com";
+  const adminEmail = "tsedeniyafisehaw@gmail.com";
 
   try {
     // Check if user exists

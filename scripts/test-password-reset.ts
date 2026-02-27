@@ -4,7 +4,7 @@ import crypto from "crypto";
 async function testPasswordReset() {
   console.log("🧪 Testing Password Reset Flow...\n");
 
-  const testEmail = "taranveerebu340@gmail.com";
+  const testEmail = "tsedeniyafisehaw@gmail.com";
 
   try {
     // Step 1: Check if user exists

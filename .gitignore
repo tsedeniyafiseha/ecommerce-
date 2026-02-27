@@ -64,3 +64,6 @@ test-env.js
 *_PLAN.md
 FIXES_*.md
 DEPLOYMENT_*.md
+
+# old project folder
+hypercleaning/
