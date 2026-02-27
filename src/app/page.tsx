@@ -11,7 +11,17 @@ import { reviewsData } from "@/data/reviews";
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
-  const allProducts = await getAllProducts();
+  let allProducts = [];
+  let hasError = false;
+  
+  try {
+    allProducts = await getAllProducts();
+  } catch (error) {
+    console.error('Failed to load products:', error);
+    hasError = true;
+    // Continue with empty array - page will still render
+  }
+  
   const newArrivalsData = allProducts.slice(0, 8);
   const topSellingData = [...allProducts].sort((a, b) => b.rating - a.rating).slice(0, 8);
 

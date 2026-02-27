@@ -172,7 +172,7 @@ export default function CheckoutPage() {
         <div className="max-w-frame mx-auto px-4 xl:px-0 py-20 text-center">
           <p className="text-gray-500 mb-4">Your cart is empty</p>
           <Link href="/shop">
-            <Button className="bg-sky-500 hover:bg-sky-600 rounded-full">
+            <Button className="bg-red-700 hover:bg-red-800 rounded-full">
               Continue Shopping
             </Button>
           </Link>
@@ -361,7 +361,7 @@ export default function CheckoutPage() {
               <Button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-sky-500 hover:bg-sky-600 rounded-full py-4 h-[54px] md:h-[60px] font-medium disabled:opacity-60"
+                className="w-full bg-red-700 hover:bg-red-800 rounded-full py-4 h-[54px] md:h-[60px] font-medium disabled:opacity-60"
               >
                 {loading ? "Submitting Order..." : "Submit Order Request"}
               </Button>

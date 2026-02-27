@@ -133,7 +133,7 @@ export default function AdminCategoriesPage() {
             setEditingId(null);
             setFormData({ name: "", slug: "", description: "" });
           }}
-          className="px-4 py-2 bg-sky-500 text-white rounded-full text-sm font-medium hover:bg-sky-600"
+          className="px-4 py-2 bg-red-700 text-white rounded-full text-sm font-medium hover:bg-red-800"
         >
           Add Category
         </button>
@@ -190,7 +190,7 @@ export default function AdminCategoriesPage() {
             <div className="flex gap-2">
               <button
                 type="submit"
-                className="px-4 py-2 bg-sky-500 text-white rounded-full text-sm hover:bg-sky-600"
+                className="px-4 py-2 bg-red-700 text-white rounded-full text-sm hover:bg-red-800"
               >
                 Save
               </button>

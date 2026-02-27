@@ -20,7 +20,7 @@ const productImages = [
   "/images/products/dete4.webp",
 ];
 
-const brands = ["ECOLAB", "CLOROX", "LYSOL", "MR. CLEAN", "SWIFFER", "BIO-ZYME", "MATTHEWS", "LIVI"];
+const brands = ["ORGANIC", "ARTISAN", "PREMIUM", "GOURMET", "NATURAL", "HERITAGE", "PURE", "SELECT"];
 
 const getProductImage = (id: number): string => productImages[id % productImages.length];
 const getBrand = (id: number): string => brands[id % brands.length];
@@ -60,17 +60,17 @@ const ProductCard = ({ data }: ProductCardProps) => {
         </button>
         {/* Discount Badge */}
         {hasDiscount && (
-          <span className="absolute top-2 left-2 bg-sky-500 text-white text-xs font-bold px-2 py-1 rounded">
+          <span className="absolute top-2 left-2 bg-red-700 text-white text-xs font-bold px-2 py-1 rounded">
             -{data.discount.percentage > 0 ? `${data.discount.percentage}%` : `$${data.discount.amount}`}
           </span>
         )}
       </div>
 
       {/* Brand */}
-      <p className="text-sky-500 text-xs font-semibold mb-1">{brand}</p>
+      <p className="text-red-700 text-xs font-semibold mb-1">{brand}</p>
 
       {/* Title */}
-      <h3 className="text-gray-800 text-sm mb-2 line-clamp-2 min-h-[40px] group-hover:text-sky-600 transition-colors">
+      <h3 className="text-gray-800 text-sm mb-2 line-clamp-2 min-h-[40px] group-hover:text-red-700 transition-colors">
         {data.title}
       </h3>
 

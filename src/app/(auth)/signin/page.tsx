@@ -104,7 +104,7 @@ export default function SignInPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                     required
                   />
                 </div>
@@ -119,7 +119,7 @@ export default function SignInPage() {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="Enter your password"
-                      className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                       required
                     />
                     <button
@@ -140,13 +140,13 @@ export default function SignInPage() {
                   <label className="flex items-center cursor-pointer">
                     <input
                       type="checkbox"
-                      className="mr-2 w-4 h-4 text-sky-500 border-gray-300 rounded focus:ring-sky-500"
+                      className="mr-2 w-4 h-4 text-red-700 border-gray-300 rounded focus:ring-red-700"
                     />
                     <span className="text-gray-600">Remember me</span>
                   </label>
                   <Link
                     href="/forgot-password"
-                    className="text-sky-600 hover:text-sky-700 font-medium"
+                    className="text-red-700 hover:text-red-800 font-medium"
                   >
                     Forgot Password?
                   </Link>
@@ -164,7 +164,7 @@ export default function SignInPage() {
               <div className="mt-8 text-center">
                 <p className="text-gray-600 text-sm">
                   Don't have an account?{" "}
-                  <Link href="/signup" className="text-sky-600 hover:text-sky-700 font-semibold">
+                  <Link href="/signup" className="text-red-700 hover:text-red-800 font-semibold">
                     Sign Up
                   </Link>
                 </p>

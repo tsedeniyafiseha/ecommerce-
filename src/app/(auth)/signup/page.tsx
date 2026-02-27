@@ -147,7 +147,7 @@ export default function SignUpPage() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Enter your full name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                     required
                   />
                 </div>
@@ -162,7 +162,7 @@ export default function SignUpPage() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                     required
                   />
                 </div>
@@ -178,7 +178,7 @@ export default function SignUpPage() {
                       value={formData.password}
                       onChange={handleChange}
                       placeholder="Create a password"
-                      className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                       required
                     />
                     <button
@@ -229,7 +229,7 @@ export default function SignUpPage() {
                       value={formData.confirmPassword}
                       onChange={handleChange}
                       placeholder="Confirm your password"
-                      className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                       required
                     />
                     <button
@@ -249,16 +249,16 @@ export default function SignUpPage() {
                 <div className="flex items-start">
                   <input
                     type="checkbox"
-                    className="mt-1 mr-2 w-4 h-4 text-sky-500 border-gray-300 rounded focus:ring-sky-500"
+                    className="mt-1 mr-2 w-4 h-4 text-red-700 border-gray-300 rounded focus:ring-red-700"
                     required
                   />
                   <label className="text-sm text-gray-600">
                     I agree to the{" "}
-                    <Link href="/terms" className="text-sky-600 hover:text-sky-700 font-medium">
+                    <Link href="/terms" className="text-red-700 hover:text-red-800 font-medium">
                       Terms & Conditions
                     </Link>{" "}
                     and{" "}
-                    <Link href="/privacy" className="text-sky-600 hover:text-sky-700 font-medium">
+                    <Link href="/privacy" className="text-red-700 hover:text-red-800 font-medium">
                       Privacy Policy
                     </Link>
                   </label>
@@ -276,7 +276,7 @@ export default function SignUpPage() {
               <div className="mt-8 text-center">
                 <p className="text-gray-600 text-sm">
                   Already have an account?{" "}
-                  <Link href="/signin" className="text-sky-600 hover:text-sky-700 font-semibold">
+                  <Link href="/signin" className="text-red-700 hover:text-red-800 font-semibold">
                     Sign In
                   </Link>
                 </p>

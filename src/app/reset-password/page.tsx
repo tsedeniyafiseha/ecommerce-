@@ -74,7 +74,7 @@ export default function ResetPasswordPage() {
           </p>
           <Link
             href="/forgot-password"
-            className="inline-block px-6 py-3 bg-sky-500 text-white rounded-full font-medium hover:bg-sky-600"
+            className="inline-block px-6 py-3 bg-red-700 text-white rounded-full font-medium hover:bg-red-800"
           >
             Request New Link
           </Link>
@@ -126,7 +126,7 @@ export default function ResetPasswordPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 minLength={8}
-                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                 placeholder="Enter new password"
               />
               <button
@@ -178,7 +178,7 @@ export default function ResetPasswordPage() {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
                 minLength={8}
-                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent transition-all"
                 placeholder="Confirm new password"
               />
               <button
@@ -198,7 +198,7 @@ export default function ResetPasswordPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-sky-500 text-white py-3 rounded-full font-medium hover:bg-sky-600 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-red-700 text-white py-3 rounded-full font-medium hover:bg-red-800 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? "Resetting..." : "Reset Password"}
           </button>

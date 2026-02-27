@@ -132,7 +132,7 @@ export default function NewProductPage() {
         <div className="bg-white border border-black/10 rounded-2xl p-6 shadow-sm">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center">
-              <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
@@ -152,7 +152,7 @@ export default function NewProductPage() {
                 value={formData.title}
                 onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                 placeholder="e.g., Multi-Surface Cleaner 5L"
-                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all"
                 required
               />
               <p className="text-xs text-gray-500 mt-1">Clear, descriptive name including size/volume</p>
@@ -165,7 +165,7 @@ export default function NewProductPage() {
                 onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                 placeholder="Describe the product features, benefits, usage instructions, and safety information..."
                 rows={5}
-                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all resize-none"
+                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all resize-none"
               />
               <p className="text-xs text-gray-500 mt-1">Include key features, ingredients, and usage instructions</p>
             </div>
@@ -177,7 +177,7 @@ export default function NewProductPage() {
               <select
                 value={formData.categoryId}
                 onChange={(e) => setFormData({ ...formData, categoryId: e.target.value })}
-                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all bg-white"
+                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all bg-white"
                 required
               >
                 <option value="">-- Select a category --</option>
@@ -224,7 +224,7 @@ export default function NewProductPage() {
                   value={formData.price}
                   onChange={(e) => setFormData({ ...formData, price: e.target.value })}
                   placeholder="0.00"
-                  className="w-full pl-8 pr-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                  className="w-full pl-8 pr-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all"
                   required
                 />
               </div>
@@ -241,7 +241,7 @@ export default function NewProductPage() {
                 value={formData.stock}
                 onChange={(e) => setFormData({ ...formData, stock: e.target.value })}
                 placeholder="0"
-                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all"
                 required
               />
               <p className="text-xs text-gray-500 mt-1">Available units in inventory</p>
@@ -257,7 +257,7 @@ export default function NewProductPage() {
                 value={formData.rating}
                 onChange={(e) => setFormData({ ...formData, rating: e.target.value })}
                 placeholder="4.5"
-                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all"
               />
               <p className="text-xs text-gray-500 mt-1">Product rating (optional)</p>
             </div>
@@ -276,7 +276,7 @@ export default function NewProductPage() {
                       value={formData.discountAmount}
                       onChange={(e) => setFormData({ ...formData, discountAmount: e.target.value })}
                       placeholder="0.00"
-                      className="w-full pl-8 pr-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                      className="w-full pl-8 pr-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all"
                     />
                   </div>
                   <p className="text-xs text-gray-500 mt-1">Fixed discount amount</p>
@@ -292,7 +292,7 @@ export default function NewProductPage() {
                       value={formData.discountPercentage}
                       onChange={(e) => setFormData({ ...formData, discountPercentage: e.target.value })}
                       placeholder="0"
-                      className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all"
+                      className="w-full px-4 py-3 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 transition-all"
                     />
                     <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 font-medium">%</span>
                   </div>
@@ -328,7 +328,7 @@ export default function NewProductPage() {
           <button
             type="submit"
             disabled={loading}
-            className="px-10 py-4 bg-sky-500 text-white rounded-full font-semibold hover:bg-sky-600 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+            className="px-10 py-4 bg-red-700 text-white rounded-full font-semibold hover:bg-red-800 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
           >
             {loading ? (
               <>

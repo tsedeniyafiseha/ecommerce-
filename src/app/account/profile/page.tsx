@@ -203,7 +203,7 @@ export default function ProfilePage() {
                   className={cn(
                     "w-full text-left px-4 py-3 rounded-lg font-medium transition-colors",
                     activeTab === "profile"
-                      ? "bg-sky-50 text-sky-600 border-l-4 border-sky-600"
+                      ? "bg-red-50 text-red-700 border-l-4 border-sky-600"
                       : "text-gray-700 hover:bg-gray-50"
                   )}
                 >
@@ -214,7 +214,7 @@ export default function ProfilePage() {
                   className={cn(
                     "w-full text-left px-4 py-3 rounded-lg font-medium transition-colors",
                     activeTab === "orders"
-                      ? "bg-sky-50 text-sky-600 border-l-4 border-sky-600"
+                      ? "bg-red-50 text-red-700 border-l-4 border-sky-600"
                       : "text-gray-700 hover:bg-gray-50"
                   )}
                 >
@@ -225,7 +225,7 @@ export default function ProfilePage() {
                   className={cn(
                     "w-full text-left px-4 py-3 rounded-lg font-medium transition-colors",
                     activeTab === "addresses"
-                      ? "bg-sky-50 text-sky-600 border-l-4 border-sky-600"
+                      ? "bg-red-50 text-red-700 border-l-4 border-sky-600"
                       : "text-gray-700 hover:bg-gray-50"
                   )}
                 >
@@ -236,7 +236,7 @@ export default function ProfilePage() {
                   className={cn(
                     "w-full text-left px-4 py-3 rounded-lg font-medium transition-colors",
                     activeTab === "security"
-                      ? "bg-sky-50 text-sky-600 border-l-4 border-sky-600"
+                      ? "bg-red-50 text-red-700 border-l-4 border-sky-600"
                       : "text-gray-700 hover:bg-gray-50"
                   )}
                 >
@@ -284,7 +284,7 @@ export default function ProfilePage() {
                           type="text"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
                           placeholder="Your name"
                         />
                       </div>
@@ -296,7 +296,7 @@ export default function ProfilePage() {
                           type="email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
                           placeholder="your@email.com"
                         />
                       </div>
@@ -315,7 +315,7 @@ export default function ProfilePage() {
                       <button
                         type="submit"
                         disabled={saving}
-                        className="px-6 py-3 bg-sky-500 text-white rounded-lg font-medium hover:bg-sky-600 disabled:opacity-50"
+                        className="px-6 py-3 bg-red-700 text-white rounded-lg font-medium hover:bg-red-800 disabled:opacity-50"
                       >
                         {saving ? "Saving..." : "Save Changes"}
                       </button>
@@ -333,7 +333,7 @@ export default function ProfilePage() {
                       <p className="text-gray-600 mb-4">No orders yet</p>
                       <Link
                         href="/shop"
-                        className="inline-block px-6 py-3 bg-sky-500 text-white rounded-lg font-medium hover:bg-sky-600"
+                        className="inline-block px-6 py-3 bg-red-700 text-white rounded-lg font-medium hover:bg-red-800"
                       >
                         Start Shopping
                       </Link>
@@ -386,7 +386,7 @@ export default function ProfilePage() {
                             </p>
                             <Link
                               href={`/orders/${order.id}`}
-                              className="text-sky-600 hover:text-sky-700 font-medium"
+                              className="text-red-700 hover:text-red-800 font-medium"
                             >
                               View Details →
                             </Link>
@@ -409,7 +409,7 @@ export default function ProfilePage() {
                     </p>
                     <Link
                       href="/shop"
-                      className="inline-block px-6 py-3 bg-sky-500 text-white rounded-lg font-medium hover:bg-sky-600"
+                      className="inline-block px-6 py-3 bg-red-700 text-white rounded-lg font-medium hover:bg-red-800"
                     >
                       Place an Order
                     </Link>
@@ -430,7 +430,7 @@ export default function ProfilePage() {
                         type="password"
                         value={currentPassword}
                         onChange={(e) => setCurrentPassword(e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
                         placeholder="Enter current password"
                         required
                       />
@@ -445,7 +445,7 @@ export default function ProfilePage() {
                           type="password"
                           value={newPassword}
                           onChange={(e) => setNewPassword(e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
                           placeholder="Enter new password"
                           required
                         />
@@ -458,7 +458,7 @@ export default function ProfilePage() {
                           type="password"
                           value={confirmPassword}
                           onChange={(e) => setConfirmPassword(e.target.value)}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
                           placeholder="Confirm new password"
                           required
                         />
@@ -474,7 +474,7 @@ export default function ProfilePage() {
                     <button
                       type="submit"
                       disabled={saving}
-                      className="px-6 py-3 bg-sky-500 text-white rounded-lg font-medium hover:bg-sky-600 disabled:opacity-50"
+                      className="px-6 py-3 bg-red-700 text-white rounded-lg font-medium hover:bg-red-800 disabled:opacity-50"
                     >
                       {saving ? "Updating..." : "Change Password"}
                     </button>

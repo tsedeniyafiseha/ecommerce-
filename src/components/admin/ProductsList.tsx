@@ -72,7 +72,7 @@ export default function ProductsList({ products }: { products: Product[] }) {
         <p className="text-black/60 mb-4">No products found yet.</p>
         <Link
           href="/admin/products/new"
-          className="inline-block px-6 py-3 bg-sky-500 text-white rounded-full text-sm font-medium hover:bg-sky-600"
+          className="inline-block px-6 py-3 bg-red-700 text-white rounded-full text-sm font-medium hover:bg-red-800"
         >
           Create Your First Product
         </Link>
@@ -133,7 +133,7 @@ export default function ProductsList({ products }: { products: Product[] }) {
                     <p className="text-lg font-bold text-green-600">
                       ${discountedPrice.toFixed(2)} NZD
                     </p>
-                    <p className="text-xs text-sky-500 font-medium">
+                    <p className="text-xs text-red-700 font-medium">
                       {product.discountPercentage > 0 
                         ? `-${product.discountPercentage}%` 
                         : `-${product.discountAmount}`}
@@ -150,10 +150,10 @@ export default function ProductsList({ products }: { products: Product[] }) {
               <div className="flex items-center gap-2 flex-shrink-0">
                 <Link
                   href={`/admin/products/${product.id}`}
-                  className="p-2 hover:bg-sky-50 rounded-lg transition-colors"
+                  className="p-2 hover:bg-red-50 rounded-lg transition-colors"
                   title="Edit product"
                 >
-                  <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                   </svg>
                 </Link>

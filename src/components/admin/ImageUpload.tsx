@@ -68,7 +68,7 @@ export default function ImageUpload({ value, onChange, label = "Product Image" }
             type="button"
             onClick={() => fileInputRef.current?.click()}
             disabled={uploading}
-            className="px-4 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
             {uploading ? (
               <>
@@ -137,7 +137,7 @@ export default function ImageUpload({ value, onChange, label = "Product Image" }
 
       {/* Manual URL Input (Optional) */}
       <details className="text-sm">
-        <summary className="cursor-pointer text-sky-600 hover:text-sky-700">
+        <summary className="cursor-pointer text-red-700 hover:text-red-800">
           Or paste image URL manually
         </summary>
         <div className="mt-2">
@@ -146,7 +146,7 @@ export default function ImageUpload({ value, onChange, label = "Product Image" }
             value={value}
             onChange={(e) => onChange(e.target.value)}
             placeholder="https://example.com/image.jpg"
-            className="w-full px-4 py-2 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm"
+            className="w-full px-4 py-2 border border-black/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700 text-sm"
           />
         </div>
       </details>

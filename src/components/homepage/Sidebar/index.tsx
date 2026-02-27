@@ -74,7 +74,7 @@ const Sidebar = () => {
                 <Link
                   key={category.id}
                   href={`/shop/category/${category.slug}`}
-                  className="block py-2 text-sm text-gray-700 hover:text-sky-600 font-medium transition-colors hover:pl-2"
+                  className="block py-2 text-sm text-gray-700 hover:text-red-700 font-medium transition-colors hover:pl-2"
                 >
                   {category.name}
                 </Link>
@@ -88,11 +88,11 @@ const Sidebar = () => {
         <Section title="Availability">
           <div className="space-y-2.5">
             <label className="flex items-center gap-2 cursor-pointer group">
-              <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-sky-500 focus:ring-sky-500 cursor-pointer" />
+              <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-red-700 focus:ring-red-700 cursor-pointer" />
               <span className="text-sm text-gray-700 group-hover:text-gray-900 font-medium">In Stock</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer group">
-              <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-sky-500 focus:ring-sky-500 cursor-pointer" />
+              <input type="checkbox" className="w-4 h-4 rounded border-gray-300 text-red-700 focus:ring-red-700 cursor-pointer" />
               <span className="text-sm text-gray-700 group-hover:text-gray-900 font-medium">Ships in 24hrs</span>
             </label>
           </div>

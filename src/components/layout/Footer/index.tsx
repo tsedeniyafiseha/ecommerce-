@@ -75,11 +75,11 @@ const Footer: React.FC<FooterProps> = ({ showNewsletter = false }) => {
                   "text-[28px] lg:text-[32px] mb-6",
                 ])}
               >
-                HYPER CLEANING
+                FRESHPANTRY
               </h1>
               <p className="text-black/60 text-sm mb-9">
-                Your trusted source for professional cleaning supplies and materials.
-                Quality products for commercial and residential use.
+                Your trusted source for premium food ingredients and specialty cooking supplies.
+                Quality products for home cooks and professional chefs.
               </p>
               <div className="flex items-center">
                 {socialsData.map((social) => (
@@ -104,7 +104,7 @@ const Footer: React.FC<FooterProps> = ({ showNewsletter = false }) => {
           <hr className="h-[1px] border-t-black/10 mb-6" />
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center mb-2">
             <p className="text-sm text-center sm:text-left text-black/60 mb-4 sm:mb-0 sm:mr-1">
-              Hyper Cleaning Supplies © 2024
+              FreshPantry © 2024
             </p>
             <div className="flex items-center">
               {paymentBadgesData.map((badge, _, arr) => (

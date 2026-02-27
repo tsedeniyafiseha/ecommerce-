@@ -20,7 +20,7 @@ export default function WishlistPage() {
             <p className="text-gray-600 mb-6">Start adding products you love to your wishlist</p>
             <a 
               href="/shop" 
-              className="inline-block bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-3 rounded-md transition-colors"
+              className="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold px-8 py-3 rounded-md transition-colors"
             >
               Browse Products
             </a>

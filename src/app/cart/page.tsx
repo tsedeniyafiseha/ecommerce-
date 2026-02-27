@@ -122,7 +122,7 @@ export default function CartPage() {
                   </InputGroup>
                   <Button
                     type="button"
-                    className="bg-sky-500 hover:bg-sky-600 rounded-full w-full max-w-[119px] h-[48px]"
+                    className="bg-red-700 hover:bg-red-800 rounded-full w-full max-w-[119px] h-[48px]"
                   >
                     Apply
                   </Button>
@@ -131,7 +131,7 @@ export default function CartPage() {
                 <Button
                   type="button"
                   onClick={handleCheckout}
-                  className="text-sm md:text-base font-medium bg-sky-500 hover:bg-sky-600 rounded-full w-full py-4 h-[54px] md:h-[60px] group"
+                  className="text-sm md:text-base font-medium bg-red-700 hover:bg-red-800 rounded-full w-full py-4 h-[54px] md:h-[60px] group"
                 >
                   Go to Checkout{" "}
                   <FaArrowRight className="text-xl ml-2 group-hover:translate-x-1 transition-all" />

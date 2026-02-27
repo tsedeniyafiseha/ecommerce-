@@ -94,12 +94,12 @@ export default function BlogPage() {
             {blogPosts.map((post) => (
               <article key={post.id} className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="p-6">
-                  <span className="text-xs font-semibold text-sky-500 uppercase">{post.category}</span>
+                  <span className="text-xs font-semibold text-red-700 uppercase">{post.category}</span>
                   <h2 className="text-xl font-bold text-gray-900 mt-2 mb-3">{post.title}</h2>
                   <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-400">{post.date}</span>
-                    <Link href={`/blog/${post.slug}`} className="text-sm font-medium text-sky-500 hover:text-sky-600">
+                    <Link href={`/blog/${post.slug}`} className="text-sm font-medium text-red-700 hover:text-red-700">
                       Read More →
                     </Link>
                   </div>

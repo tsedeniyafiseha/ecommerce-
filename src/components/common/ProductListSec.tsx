@@ -40,7 +40,7 @@ const ProductListSec = ({ title, data, viewAllLink }: ProductListSecProps) => {
           <div className="text-center">
             <Link
               href={viewAllLink}
-              className="inline-block px-8 py-3 border-2 rounded-full bg-sky-500 hover:bg-sky-600 text-white transition-all font-bold text-sm border-sky-500"
+              className="inline-block px-8 py-3 border-2 rounded-full bg-red-700 hover:bg-red-800 text-white transition-all font-bold text-sm border-red-700"
             >
               View All Products
             </Link>

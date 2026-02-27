@@ -38,7 +38,7 @@ export default async function AdminProductsPage() {
         </div>
         <Link
           href="/admin/products/new"
-          className="px-6 py-3 rounded-full bg-sky-500 text-white text-sm font-medium hover:bg-sky-600 transition-colors"
+          className="px-6 py-3 rounded-full bg-red-700 text-white text-sm font-medium hover:bg-red-800 transition-colors"
         >
           + New Product
         </Link>

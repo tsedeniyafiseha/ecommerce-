@@ -1,8 +1,8 @@
-# Hyper Cleaning Supplies - E-Commerce Platform
+# FreshPantry - Premium Food Ingredients Marketplace
 
-Professional cleaning supplies e-commerce platform built with Next.js 14, featuring product management, user authentication, shopping cart, and Stripe payment integration.
+Premium food ingredients e-commerce platform built with Next.js 14, featuring product management, user authentication, shopping cart, and Stripe payment integration.
 
-**Live Site:** https://www.hypercleaningsupplies.co.nz
+**Live Site:** https://www.freshpantry.co.nz
 
 ---
 
@@ -66,7 +66,7 @@ EMAIL_SERVER="smtp.gmail.com"
 EMAIL_PORT="587"
 EMAIL_USER="your-email@gmail.com"
 EMAIL_PASSWORD="your-app-password"
-EMAIL_FROM="noreply@hypercleaningsupplies.co.nz"
+EMAIL_FROM="noreply@freshpantry.co.nz"
 ```
 
 ---
@@ -117,7 +117,7 @@ npm run prisma:studio
 
 ### Database Schema
 - **User** - Customer accounts
-- **Product** - Cleaning supplies inventory
+- **Product** - Food ingredients inventory
 - **Category** - Product categories
 - **Cart** - Shopping cart items
 - **Order** - Purchase orders
@@ -204,7 +204,7 @@ npm run prisma:studio
 
 - **Shop by Category** - Dynamic menu from database categories
 - **About Us** - Company information
-- **Blog** - Cleaning tips and guides
+- **Blog** - Recipes and cooking tips
 - **Contact** - Contact form and information
 
 ### Cart System
@@ -264,8 +264,8 @@ Automated emails sent for:
 
 ### Important Production Settings
 
-- Set `NEXTAUTH_URL=https://www.hypercleaningsupplies.co.nz`
-- Set `NEXT_PUBLIC_SITE_URL=https://www.hypercleaningsupplies.co.nz`
+- Set `NEXTAUTH_URL=https://www.freshpantry.co.nz`
+- Set `NEXT_PUBLIC_SITE_URL=https://www.freshpantry.co.nz`
 - Use production Stripe keys
 - Configure production database
 - Set up production SMTP
@@ -321,7 +321,7 @@ npm run lint                # Run linter
 
 ## 📞 Support
 
-**Website:** https://www.hypercleaningsupplies.co.nz  
+**Website:** https://www.freshpantry.co.nz  
 **Phone:** +64 22 069 2139  
 **Email:** Contact through website form
 
@@ -340,7 +340,7 @@ npm run lint                # Run linter
 ✅ Wishlist  
 ✅ Responsive design  
 ✅ SEO optimized  
-✅ Blog with cleaning guides  
+✅ Blog with recipes and cooking tips  
 
 ---
 

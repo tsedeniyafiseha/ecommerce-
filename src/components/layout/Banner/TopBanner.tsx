@@ -6,7 +6,7 @@ const TopBanner = () => {
       <div className="max-w-frame mx-auto">
         <div className="flex items-center justify-center gap-8 text-xs md:text-sm whitespace-nowrap animate-marquee">
           <span className="flex items-center gap-2">
-            <span className="text-sky-400">⚡</span>
+            <span className="text-red-600">⚡</span>
             Free Shipping over $299
           </span>
           <span className="text-gray-500">|</span>
@@ -17,7 +17,7 @@ const TopBanner = () => {
           <span>Keep Your Workplace Safe & Spotless</span>
           <span className="text-gray-500">|</span>
           <span className="flex items-center gap-2">
-            <span className="text-sky-400">⚡</span>
+            <span className="text-red-600">⚡</span>
             Bulk Discounts for Business
           </span>
         </div>

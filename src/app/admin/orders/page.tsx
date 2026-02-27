@@ -60,7 +60,7 @@ export default async function AdminOrdersPage() {
                     Email:{" "}
                     <a 
                       href={`mailto:${order.customerEmail || order.User?.email}`}
-                      className="text-sky-600 hover:underline font-medium"
+                      className="text-red-700 hover:underline font-medium"
                     >
                       {order.customerEmail || order.User?.email}
                     </a>
@@ -88,7 +88,7 @@ export default async function AdminOrdersPage() {
                       {order.status}
                     </span>
                   </p>
-                  <p className="text-lg md:text-xl font-bold text-sky-600">
+                  <p className="text-lg md:text-xl font-bold text-red-700">
                     ${Number(order.totalAmount).toFixed(2)}
                   </p>
                 </div>
@@ -118,9 +118,9 @@ export default async function AdminOrdersPage() {
               {order.shippingAddress && (
                 <>
                   <hr className="border-t-black/10 mb-4" />
-                  <div className="bg-sky-50 rounded-lg p-4">
+                  <div className="bg-red-50 rounded-lg p-4">
                     <p className="font-semibold text-black mb-3 flex items-center gap-2">
-                      <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
@@ -130,13 +130,13 @@ export default async function AdminOrdersPage() {
                       <p className="font-medium text-black">{(order.shippingAddress as any).fullName}</p>
                       <p className="text-black/70">
                         <span className="font-medium">Phone:</span>{" "}
-                        <a href={`tel:${(order.shippingAddress as any).phone}`} className="text-sky-600 hover:underline">
+                        <a href={`tel:${(order.shippingAddress as any).phone}`} className="text-red-700 hover:underline">
                           {(order.shippingAddress as any).phone}
                         </a>
                       </p>
                       <p className="text-black/70">
                         <span className="font-medium">Email:</span>{" "}
-                        <a href={`mailto:${(order.shippingAddress as any).email}`} className="text-sky-600 hover:underline">
+                        <a href={`mailto:${(order.shippingAddress as any).email}`} className="text-red-700 hover:underline">
                           {(order.shippingAddress as any).email}
                         </a>
                       </p>

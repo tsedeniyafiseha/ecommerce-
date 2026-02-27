@@ -38,7 +38,7 @@ const Header = ({ data }: { data: Product }) => {
       </div>
       <div>
         {/* Brand */}
-        <p className="text-sky-500 text-sm font-bold mb-2">{brand}</p>
+        <p className="text-red-700 text-sm font-bold mb-2">{brand}</p>
         
         {/* Title */}
         <h1 className={cn([integralCF.className, "text-2xl md:text-3xl mb-3 text-gray-900"])}>
@@ -78,7 +78,7 @@ const Header = ({ data }: { data: Product }) => {
             ${discountedPrice.toFixed(2)} NZD
           </span>
           {hasDiscount && (
-            <span className="bg-sky-500 text-white text-xs font-bold px-2 py-1 rounded">
+            <span className="bg-red-700 text-white text-xs font-bold px-2 py-1 rounded">
               -{data.discount.percentage > 0 ? `${data.discount.percentage}%` : `$${data.discount.amount}`}
             </span>
           )}

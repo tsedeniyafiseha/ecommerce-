@@ -119,7 +119,7 @@ export default function UserOrdersPage() {
           <p className="text-black/60 mb-6">You haven't placed any orders yet. Start shopping to see your orders here!</p>
           <button
             onClick={() => router.push("/shop")}
-            className="px-6 py-3 bg-sky-500 text-white rounded-full font-medium hover:bg-sky-600"
+            className="px-6 py-3 bg-red-700 text-white rounded-full font-medium hover:bg-red-800"
           >
             Start Shopping
           </button>
@@ -151,16 +151,16 @@ export default function UserOrdersPage() {
                   </p>
                 </div>
                 <div className="text-left md:text-right">
-                  <p className="text-2xl font-bold text-sky-600">
+                  <p className="text-2xl font-bold text-red-700">
                     ${Number(order.totalAmount).toFixed(2)}
                   </p>
                 </div>
               </div>
 
               {/* Status Message */}
-              <div className="bg-sky-50 border border-sky-200 rounded-lg p-4 mb-6">
+              <div className="bg-red-50 border border-sky-200 rounded-lg p-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-sky-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-red-700 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <p className="text-sm text-sky-900">{getStatusMessage(order.status)}</p>
