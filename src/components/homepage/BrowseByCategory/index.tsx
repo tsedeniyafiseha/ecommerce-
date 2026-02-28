@@ -17,22 +17,22 @@ type Category = {
 const categoryImages: Record<string, string> = {
   "spices-herbs": "https://images.unsplash.com/photo-1596040033229-a0b3b1e1c7e7?w=400&q=80",
   "baking-essentials": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80",
+  "grains-pulses": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&q=80",
   "oils-vinegars": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&q=80",
-  "grains-flours": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&q=80",
-  "sauces-condiments": "https://images.unsplash.com/photo-1472476443507-c7a5948772fc?w=400&q=80",
-  "dried-fruits-nuts": "https://images.unsplash.com/photo-1508747703725-719777637510?w=400&q=80",
-  "international-ingredients": "https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=400&q=80",
+  "sweeteners": "https://images.unsplash.com/photo-1587049352846-4a222e784422?w=400&q=80",
+  "nuts-seeds": "https://images.unsplash.com/photo-1508747703725-719777637510?w=400&q=80",
+  "dried-fruits": "https://images.unsplash.com/photo-1577003833154-a2e6b68e5b1e?w=400&q=80",
 };
 
 // Category icons/emojis
 const categoryIcons: Record<string, string> = {
   "spices-herbs": "🌿",
   "baking-essentials": "🧁",
+  "grains-pulses": "🌾",
   "oils-vinegars": "🫒",
-  "grains-flours": "🌾",
-  "sauces-condiments": "🍯",
-  "dried-fruits-nuts": "🥜",
-  "international-ingredients": "🌏",
+  "sweeteners": "🍯",
+  "nuts-seeds": "🥜",
+  "dried-fruits": "🍇",
 };
 
 const getImage = (slug: string): string => {
