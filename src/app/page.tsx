@@ -9,6 +9,7 @@ import { getAllProducts } from "@/lib/products";
 import { reviewsData } from "@/data/reviews";
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export default async function Home() {
   // Initialize products array with explicit type
